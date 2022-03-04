@@ -1,64 +1,72 @@
 const container = document.querySelector('.container');
 const acordeMayor = document.querySelector('#mayor')
 const acordeMenor = document.querySelector('#menor')
+const span = document.querySelector('#span')
 
-/*  tipoAcorde();
+let img = document.createElement("img");
+img.src = "imgAcordes/";
+span.appendChild(img);
 
-function tipoAcorde() {
-    if(acordeMayor.checked == 'true') {
-        mayor();
-    }
-    if(acordeMenor.ariaChecked == 'true') {
-        menor();
-    }
-}  */
 container.addEventListener('click', (e) => {
     if (acordeMayor.checked) {
         if(e.target.classList.contains('btna')) {
-            window.open('imgAcordes/A.jpg');
+            img.src = "imgAcordes/A.jpg";
         }
         if(e.target.classList.contains('btnb')) {
-            window.open('imgAcordes/B.jpg');
+            img.src = "imgAcordes/B.jpg";
         }
         if(e.target.classList.contains('btnc')) {
-            window.open('imgAcordes/C.jpg');
+            img.src = "imgAcordes/C.jpg";
         }
         if(e.target.classList.contains('btnd')) {
-            window.open('imgAcordes/D.jpg');
+            img.src = "imgAcordes/D.jpg";
         }
         if(e.target.classList.contains('btne')) {
-            window.open('imgAcordes/E.jpg');
+            img.src = "imgAcordes/E.jpg";
         }
         if(e.target.classList.contains('btnf')) {
-            window.open('imgAcordes/F.jpg');
+            img.src = "imgAcordes/F.jpg";
         }
         if(e.target.classList.contains('btng')) {
-            window.open('imgAcordes/G.jpg');
+            img.src = "imgAcordes/G.jpg"; 
         }
     }
     if(acordeMenor.checked) {
         if(e.target.classList.contains('btna')) {
-            window.open('imgAcordes/Am.jpg');
+            img.src = "imgAcordes/Am.jpg";
         }
         if(e.target.classList.contains('btnb')) {
-            window.open('imgAcordes/Bm.jpg');
+            img.src = "imgAcordes/Bm.jpg";
         }
         if(e.target.classList.contains('btnc')) {
-            window.open('imgAcordes/Cm.jpg');
+            img.src = "imgAcordes/Cm.jpg";
         }
         if(e.target.classList.contains('btnd')) {
-            window.open('imgAcordes/Dm.jpg');
+            img.src = "imgAcordes/Dm.jpg";
         }
         if(e.target.classList.contains('btne')) {
-            window.open('imgAcordes/Em.jpg');
+            img.src = "imgAcordes/Em.jpg";
         }
         if(e.target.classList.contains('btnf')) {
-            window.open('imgAcordes/Fm.jpg');
+            img.src = "imgAcordes/Fm.jpg";
         }
         if(e.target.classList.contains('btng')) {
-            window.open('imgAcordes/Gm.jpg');
+            img.src = "imgAcordes/Gm.jpg";
         }
     }
 })
 
 
+/*
+container.addEventListener('click', (e) => {
+    if (acordeMayor.checked) {
+        console.log('a')
+        //cargarImagenMayor();
+    } else { if(acordeMenor.checked) {
+            cargarImagenMenor();
+        } else {
+            //!alert('Seleccionar Mayor o Menor')
+        }
+    }
+})
+*/
